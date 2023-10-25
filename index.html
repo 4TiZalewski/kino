@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <fieldset>
+                <label for="miejsca">
+                    Miejsca w kinie
+                    <input type="number" id="miejsca" name="miejsca" min="10" max="10000">
+                </label>
+                <label for="miejsca-na-rzad">
+                    Miejsca w kinie
+                    <input type="number" id="miejsca-na-rzad" name="miejsca-na-rzad" min="5" max="25">
+                </label>
+                <button id="create">Utworz kino</button>
+            </fieldset>
+        </form>   
+
+        <div class="cinema-wrapper">
+            <ol class="cinema">
+                <li>
+                    <button value="0">1</button>
+                    <button value="0">2</button>
+                    <button value="0">3</button>
+                    <button value="0">4</button>
+                    <button value="0">5</button>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
