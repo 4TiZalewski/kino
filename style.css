@@ -27,14 +27,6 @@ fieldset {
     align-items: center;
 }
 
-ol {
-    margin-bottom: 0;
-}
-
-li {
-    white-space: nowrap;
-}
-
 #reserve {
     margin: 1rem;
 }
