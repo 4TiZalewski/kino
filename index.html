@@ -9,30 +9,38 @@
 </head>
 <body>
     <div class="container">
-        <form action="#">
-            <fieldset>
-                <label for="miejsca">
-                    Miejsca w kinie
-                    <input type="number" id="miejsca" name="miejsca" min="10" max="10000">
+        <div class="settings">
+            <form action="#">
+                <fieldset>
+                    <label for="miejsca">
+                        Miejsca w kinie
+                        <input type="number" id="miejsca" name="miejsca">
+                    </label>
+                    <label for="miejsca-na-rzad">
+                        Miejsca na rząd
+                        <input type="number" id="miejsca-na-rzad" name="miejsca-na-rzad">
+                    </label>
+                    <button id="create">Utwórz kino</button>
+                </fieldset>
+            </form>   
+            <div class="ticket-settings">
+                <label for="price-setting">
+                    Cena
+                    <input type="text" id="price-setting" name="price-setting">
                 </label>
-                <label for="miejsca-na-rzad">
-                    Miejsca w kinie
-                    <input type="number" id="miejsca-na-rzad" name="miejsca-na-rzad" min="5" max="25">
-                </label>
-                <button id="create">Utworz kino</button>
-            </fieldset>
-        </form>   
+                <p>Aktualizuje się przy rezerwacji</p>
+            </div>
+        </div>
 
         <div class="cinema-wrapper">
-            <ol class="cinema">
-                <li>
-                    <button value="0">1</button>
-                    <button value="0">2</button>
-                    <button value="0">3</button>
-                    <button value="0">4</button>
-                    <button value="0">5</button>
-                </li>
-            </ol>
+            <!-- TODO: make nowrap and extend to right -->
+            <div class="cinema"></div>
+            <button id="reserve">Zarezerwuj</button>
+            <div class="cena-wrapper">
+                <h5>Cena: </h5>
+                <h5 class="cena"></h5>
+                <h5> zł</h5>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>
